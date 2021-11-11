@@ -120,4 +120,4 @@ goto start
 
     var shl = new ActiveXObject("Shell.Application");
     var folder = shl.BrowseForFolder(0, "Please choose a folder.", 0, 0x00);
-    WSH.Echo(folder ? folder.self.path : '')
+    WSH.Echo(folder ? folder.self.path : '');
