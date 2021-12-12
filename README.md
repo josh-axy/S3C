@@ -13,4 +13,4 @@ To undo a selection mistake, the most simple route is to delete the Config.txt t
 
 
 [Status update]
-I have moved to Windows 11 and have been running the script every day as a result. The script still functions normally under the new OS.
+I have moved to Windows 11 and have been running the script every day in it as a result. The script still functions normally under the new OS.
