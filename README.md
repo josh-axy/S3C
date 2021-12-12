@@ -10,3 +10,7 @@ The SC Cache Cleaner script can be ran from anywhere, on first run it requests u
 Should you make a mistake and select the wrong folder don't fret, the script checks for the existence of specifically named folders it is looking to clean up before taking any action. A wrong folder will result in the script simply not cleaning the cache, not deleting random files.
 
 To undo a selection mistake, the most simple route is to delete the Config.txt the script generates and run it again to get the setup prompts.
+
+
+[Status update]
+I have moved to Windows 11 and have been running the script every day as a result. The script still functions normally under the new OS.
