@@ -96,8 +96,8 @@ del "%GameBase%\PTU\USER\Client\0\*.cfg" 2>&1 1>nul | findstr "^" > nul && echo 
 
 ::PTU Remove Cache folder in 3.17 Local App Data Directory
 cd "%localappdata%\Star Citizen\sc-alpha*"
-IF EXIST "shaders" (
-	RMDIR /S /Q "shaders" && ECHO PTU - Clearing AppLocal Shaders Cache: [92mSUCCESS![0m
+IF EXIST "%cd%\shaders" (
+	RMDIR /S /Q "%cd%\shaders" && ECHO PTU - Clearing AppLocal Shaders Cache: [92mSUCCESS![0m
 ) else (
 	echo PTU - [93mAppLocal Shaders folder has not been rebuilt yet, skipping.[0m
 )
