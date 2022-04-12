@@ -50,7 +50,7 @@ SET LauncherDrive=%LauncherBase:~0,2%
 ::Create temporary variable and ask user if they would like to clean the games caches. This accepts upper and lower case values. The brackets around N are standard formating that mark the action taken if only enter is pressed at the prompt. Changing the brackets to enclose Y will not change the default behavior as our script only checks if the value equals Y. This is for user understanding only.
 SET /P AREYOUSURE=Do you wish to clean game cache? (Y/[N])
 
-::Check user input, if the input doesn't equal Y then go to ":run" bypassing cache cleanup functions. (Jump to line 98 if not Y or y).
+::Check user input, if the input doesn't equal Y then go to ":run" bypassing cache cleanup functions. (Jump to line 106 if not Y or y).
 IF /I "%AREYOUSURE%" NEQ "Y" GOTO RUN
 
 ::Navigate to the drive containing SC
