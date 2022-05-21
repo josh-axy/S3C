@@ -94,12 +94,12 @@ IF EXIST "%GameBase%\PTU\USER\Client\0\DebugGUI\" (
 
 del "%GameBase%\PTU\USER\Client\0\*.cfg" 2>&1 1>nul | findstr "^" > nul && echo PTU - [93mNo cfg files to clean yet![0m || echo PTU - Cleaning old cfg files: [92mSUCCESS![0m
 
-::PTU Remove Cache folder in 3.17 Local App Data Directory
-cd "%localappdata%\Star Citizen\sc-alpha*"
-IF EXIST "%cd%\shaders" (
-	RMDIR /S /Q "%cd%\shaders" && ECHO PTU - Clearing AppLocal Shaders Cache: [92mSUCCESS![0m
+::Remove Cache folder in 3.17 Local App Data Directory
+cd "%localappdata%\Star Citizen"
+IF EXIST "%cd%\sc-alpha*" (
+	(for /d %%G in ("%cd%\sc-alpha*") do rd /s /q "%%~G") && ECHO ALL - Clearing AppLocal Shaders Cache: [92mSUCCESS![0m
 ) else (
-	echo PTU - [93mAppLocal Shaders folder has not been rebuilt yet, skipping.[0m
+	echo ALL - [93mAppLocal Shaders folder has not been rebuilt yet, skipping.[0m
 )
 
 ::Script destination if folder deletion is skipped.
