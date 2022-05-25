@@ -14,3 +14,5 @@ To undo a selection mistake, the most simple route is to delete the Config.txt t
 
 [Status update]
 Added 3.17 clearing functionality.
+05-25-2022: Manifold-Consortium created some nice changes to the 3.17 local app data clearer code. Tested, Merged.
+05-25-2022: Found where script would erroneously skip cleaning local app data if game client was listed as being on a drive different than C:. Patched.
